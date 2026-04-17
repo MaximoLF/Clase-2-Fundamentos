@@ -113,4 +113,20 @@
 # print(f"El total de vocales es {vocales}") 
 # print(f"El total de consonantes es {conso}") 
 
+#---------------------------------------------------------------------------------------------------------
 
+alumnos=int(input("Cuantos alumnos son?: ")) # Cantidad de alumnos
+for j in range(alumnos): 
+
+    notas=int(input(f"Ingres la cantidad de notas del almuno {j+1}: ")) # Cantidad de notas
+    suma=0
+    for i in range(notas): 
+        n=float(input(f"Ingrese la nota {i+1}: ")) # Ingresa las notas
+        suma=suma+n
+    prom=suma/notas # num (cantidad de notas)
+    print(f"El promedio es {prom}")
+
+    if prom>=4:
+        print("Almuno Aprobado")
+    else:
+        print("Almno Reprobado")
