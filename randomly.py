@@ -202,16 +202,21 @@ import time
 # 800grs o menos, a lata | 801 o mas, a la plancha | contar cuando quedaron a la plancha cuantos quedaron para embasar a lata
 
 
-captura=random.randint(10, 20)
+peces=random.randint(10, 20)
+plata=0
+pplancha=0
+print(f"Capturamos {peces} peces")
+for p in range(peces):
+    pesoP=random.randint(100, 2000)
+    print(f"El peso del pez {p} es de {pesoP}")
+    if pesoP<800:
+        plata+=1
+    else:
+        pplancha+=1
+print(f"La cantidad de peces para enlatar es de {plata}")
+print(f"La cantidad de peces para plancha es de {pplancha}")
 
-print(f"Caputuraste {captura} peces")
-peces=0
-pez1=0
-pez2=0
-peces=captura
-peces=random.randint(pez1, pez2)
 
-print(f"Tienes {pez1} que pesan menos de 800grs, y {pez2} que pesan mas de 801 grs")
 
 
 
